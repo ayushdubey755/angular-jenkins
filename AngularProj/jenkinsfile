@@ -3,9 +3,7 @@ node {
         git branch: 'main',url: 'https://github.com/ayushdubey755/angular-jenkins.git'
     }
 
-    stage('Install node modules'){
-        sh "npm install"
-    }
+ 
     stage('Build'){
         sh "npm run build:ssr"
     }
